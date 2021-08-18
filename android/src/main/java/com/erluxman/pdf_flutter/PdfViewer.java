@@ -1,6 +1,7 @@
 package com.erluxman.pdf_flutter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.View;
 
 import com.github.barteksc.pdfviewer.PDFView;
@@ -43,11 +44,13 @@ public class PdfViewer implements PlatformView, MethodCallHandler {
     }
 
     private void loadPdfView() {
+        pdfView.setBackgroundColor(Color.LTGRAY);
         pdfView.fromFile(new File(filePath))
                 .enableSwipe(true) // allows to block changing pages using swipe
                 .swipeHorizontal(false)
                 .enableDoubletap(true)
                 .defaultPage(0)
+                .spacing(8)
                 .load();
     }
 
