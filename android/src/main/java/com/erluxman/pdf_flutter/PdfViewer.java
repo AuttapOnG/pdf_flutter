@@ -51,6 +51,9 @@ public class PdfViewer implements PlatformView, MethodCallHandler {
                 .enableDoubletap(true)
                 .defaultPage(0)
                 .spacing(8)
+                .spacingTop(8)
+                .spacingBottom(8)
+                .sideMargin(8)
                 .load();
     }
 
