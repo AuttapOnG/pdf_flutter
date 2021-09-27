@@ -13,9 +13,13 @@ dependencies:
     sdk: flutter
   http: ^0.13.3
   custom_path_provider:
-    path: ./custom_path_provider
+    git:
+      url: https://github.com/AuttapOnG/custom_path_provider.git
+      ref: master
   custom_flutter_cache_manager:
-    path: ./custom_flutter_cache_manager
+    git:
+      url: https://github.com/AuttapOnG/custom_flutter_cache_manager.git
+      ref: master
 
 dev_dependencies:
   flutter_test:

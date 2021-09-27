@@ -10,7 +10,9 @@ dependencies:
   clock: ^1.1.0
   collection: ^1.15.0
   custom_path_provider:
-    path: ../custom_path_provider
+    git:
+      url: https://github.com/AuttapOnG/custom_path_provider.git
+      ref: master
   file: ">=6.0.0 <7.0.0"
   flutter:
     sdk: flutter
