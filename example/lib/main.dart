@@ -53,7 +53,7 @@ class _PDFListBodyState extends State<PDFListBody> {
               _navigateToPage(
                 title: 'Pdf from networkUrl',
                 child: PDF.network(
-                  'https://google-developer-training.github.io/android-developer-fundamentals-course-concepts/en/android-developer-fundamentals-course-concepts-en.pdf',
+                  'http://www.africau.edu/images/default/sample.pdf',
                 ),
               );
             },
