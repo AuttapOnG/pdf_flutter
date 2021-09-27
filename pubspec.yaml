@@ -11,11 +11,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  custom_flutter_cache_manager:
-    path: ./custom_flutter_cache_manager
   http: ^0.13.3
   custom_path_provider:
     path: ./custom_path_provider
+  custom_flutter_cache_manager:
+    path: ./custom_flutter_cache_manager
 
 dev_dependencies:
   flutter_test:
