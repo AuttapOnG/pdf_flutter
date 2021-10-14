@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -124,7 +124,6 @@
 				25D73F7B87B029484FA44CF6 /* Pods-Runner.release.xcconfig */,
 				BC6AD85C08CF1119437F8086 /* Pods-Runner.profile.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,35 +212,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DKImagePickerController/DKImagePickerController.framework",
-				"${BUILT_PRODUCTS_DIR}/DKPhotoGallery/DKPhotoGallery.framework",
-				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
-				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
-				"${PODS_ROOT}/../Flutter/Flutter.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImageFLPlugin/SDWebImageFLPlugin.framework",
-				"${BUILT_PRODUCTS_DIR}/file_picker/file_picker.framework",
-				"${BUILT_PRODUCTS_DIR}/flutter_plugin_android_lifecycle/flutter_plugin_android_lifecycle.framework",
-				"${BUILT_PRODUCTS_DIR}/path_provider/path_provider.framework",
-				"${BUILT_PRODUCTS_DIR}/pdf_flutter/pdf_flutter.framework",
-				"${BUILT_PRODUCTS_DIR}/sqflite/sqflite.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKImagePickerController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKPhotoGallery.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageFLPlugin.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/file_picker.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/flutter_plugin_android_lifecycle.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/path_provider.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pdf_flutter.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqflite.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -335,7 +311,6 @@
 /* Begin XCBuildConfiguration section */
 		249021D3217E4FDB00AE95B9 /* Profile */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -375,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
@@ -396,7 +371,10 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
@@ -409,7 +387,6 @@
 		};
 		97C147031CF9000F007C117D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -455,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +442,6 @@
 		};
 		97C147041CF9000F007C117D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -505,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
@@ -526,7 +502,10 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
@@ -549,7 +528,10 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
