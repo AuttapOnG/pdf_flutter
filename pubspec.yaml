@@ -13,13 +13,15 @@ dependencies:
     sdk: flutter
   http: ^0.13.3
   custom_path_provider:
+#    path: ./custom_path_provider
     git:
       url: https://github.com/AuttapOnG/custom_path_provider.git
-      ref: master
+      ref: fix/mutiple-class
   custom_flutter_cache_manager:
+#    path: ./custom_flutter_cache_manager
     git:
       url: https://github.com/AuttapOnG/custom_flutter_cache_manager.git
-      ref: master
+      ref: fix/mutiple-class
 
 dev_dependencies:
   flutter_test:

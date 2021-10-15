@@ -18,16 +18,16 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PathProviderPlugin implements FlutterPlugin, MethodCallHandler {
+public class CustomPathProviderPlugin implements FlutterPlugin, MethodCallHandler {
 
   private Context context;
   private MethodChannel channel;
 
-  public PathProviderPlugin() {}
+  public CustomPathProviderPlugin() {}
 
   @SuppressWarnings("deprecation")
   public static void registerWith(io.flutter.plugin.common.PluginRegistry.Registrar registrar) {
-    PathProviderPlugin instance = new PathProviderPlugin();
+    CustomPathProviderPlugin instance = new CustomPathProviderPlugin();
     instance.channel = new MethodChannel(registrar.messenger(), "plugins.flutter.io/path_provider");
     instance.context = registrar.context();
     instance.channel.setMethodCallHandler(instance);
@@ -63,7 +63,7 @@ public class PathProviderPlugin implements FlutterPlugin, MethodCallHandler {
         break;
       case "getExternalStorageDirectories":
         final Integer type = call.argument("type");
-        final String directoryName = StorageDirectoryMapper.androidType(type);
+        final String directoryName = CustomStorageDirectoryMapper.androidType(type);
         result.success(getPathProviderExternalStorageDirectories(directoryName));
         break;
       case "getApplicationSupportDirectory":

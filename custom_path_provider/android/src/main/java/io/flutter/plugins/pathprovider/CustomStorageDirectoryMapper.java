@@ -9,7 +9,7 @@ import android.os.Build.VERSION_CODES;
 import android.os.Environment;
 
 /** Helps to map the Dart `StorageDirectory` enum to a Android system constant. */
-class StorageDirectoryMapper {
+class CustomStorageDirectoryMapper {
   /**
    * Return a Android Environment constant for a Dart Index.
    *
