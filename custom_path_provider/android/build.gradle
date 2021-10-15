@@ -1,4 +1,4 @@
-group 'io.flutter.plugins.pathprovider'
+group 'io.flutter.plugins.custompathprovider'
 version '1.0-SNAPSHOT'
 
 buildscript {

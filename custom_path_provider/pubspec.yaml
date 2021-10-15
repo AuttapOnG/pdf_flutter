@@ -12,7 +12,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: io.flutter.plugins.pathprovider
+        package: io.flutter.plugins.custompathprovider
         pluginClass: CustomPathProviderPlugin
       ios:
         pluginClass: FLTPathProviderPlugin
