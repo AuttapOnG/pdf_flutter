@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#import "FLTPathProviderPlugin.h"
+#import "CustomFLTPathProviderPlugin.h"
 
 NSString* GetDirectoryOfType(NSSearchPathDirectory dir) {
   NSArray* paths = NSSearchPathForDirectoriesInDomains(dir, NSUserDomainMask, YES);
@@ -16,7 +16,7 @@ static FlutterError* getFlutterError(NSError* error) {
                              details:error.localizedDescription];
 }
 
-@implementation FLTPathProviderPlugin
+@implementation CustomFLTPathProviderPlugin
 
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   FlutterMethodChannel* channel =
