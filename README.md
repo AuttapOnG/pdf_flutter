@@ -1,13 +1,16 @@
 # pdf_flutter
 [![pub package](https://img.shields.io/pub/v/pdf_flutter.svg)](https://pub.dartlang.org/packages/pdf_flutter)
 
-Inspired by [Pdf_Viewer_Plugin](https://github.com/lubritto/Pdf_Viewer_Plugin) 😇
-Wrapped around [AndroidPdfViewer](https://github.com/barteksc/AndroidPdfViewer) on Android. 🙏🏼
+This dependency has fork from [pdf_flutter](https://github.com/erluxman/pdf_flutter)
+because I want to modifine some change on [AndroidPdfViewer](https://github.com/barteksc/AndroidPdfViewer) on Android. 🙏🏼
 
 ### 1. Add `pdf_flutter`on `pubspec.yml` 
 
     dependencies:
-      pdf_flutter: ^version
+      pdf_flutter:
+        git:
+          url: https://github.com/AuttapOnG/pdf_flutter
+          ref: master
 
 ### 2. On iOS enable PDF preview like this:
 
@@ -61,4 +64,4 @@ Add this on `ios/Runner/info.plist`:
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 
 ## Demo           
-![demo](art/pdf_flutter_updated.gif)
+![demo](art/pdf_flutter_updated.png)

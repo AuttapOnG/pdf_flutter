@@ -1,8 +1,7 @@
 name: pdf_flutter
-description: Displaying PDF from Network, File and assets easily like we display
-  Image in Flutter Widget.
-version: 2.0.0
-homepage: https://github.com/erluxman/pdf_flutter
+description: Displaying PDF from Network, File and assets easily like we display Image in Flutter Widget.
+version: 2.1.0
+homepage: https://github.com/AuttapOnG/pdf_flutter
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
@@ -12,16 +11,16 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^0.13.3
+
   custom_path_provider:
-#    path: ./custom_path_provider
     git:
       url: https://github.com/AuttapOnG/custom_path_provider.git
-      ref: fix/mutiple-class
+      ref: master
+
   custom_flutter_cache_manager:
-#    path: ./custom_flutter_cache_manager
     git:
       url: https://github.com/AuttapOnG/custom_flutter_cache_manager.git
-      ref: fix/mutiple-class
+      ref: master
 
 dev_dependencies:
   flutter_test:
